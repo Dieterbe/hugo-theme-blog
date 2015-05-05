@@ -234,6 +234,7 @@ pre {
 	white-space: pre;
 	white-space: pre-wrap;
 	word-wrap: break-word;
+	background: #fffddd;
 }
 
 blockquote,
@@ -1059,7 +1060,7 @@ span + .edit-link:before,
 .site-content .entry-meta,
 .page-content {
 	margin: 0 auto;
-	max-width: 474px;
+	max-width: 574px;
 }
 
 .page-content {

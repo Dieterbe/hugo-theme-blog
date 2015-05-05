@@ -1,17 +1,33 @@
 <aside id="categories-3" class="widget widget_categories">
-	
-	<h1 class="widget-title">Categories</h1>
 
-	<ul>
-		{{ $baseurl := .Site.BaseUrl }}
-		{{ range $key, $value := .Site.Taxonomies.categories }}
-		
-		<li class="cat-item">
-			<a href="{{ $baseurl }}/categories/{{ $key | urlize }}/index.html">{{ $key | title }}</a>
-		</li>
 
-		{{ end }}
+    {{ $baseurl := .Site.BaseUrl }}
+    {{ $tax :=  .Site.Taxonomies}} 
 
-	</ul>
 
+    <br/>
+	<h1 class="widget-title">Popular tags</h1>
+
+    <a href="{{$baseurl}}tags/monitoring">monitoring</a>
+    {{ $tax.tags.Count "monitoring" }}
+    <br/>
+    <a href="{{$baseurl}}tags/devops">devops</a>
+    {{ $tax.tags.Count "devops" }}
+    <br/>
+    <a href="{{$baseurl}}tags/golang">golang</a>
+    {{ $tax.tags.Count "golang" }}
+    <br/>
+    <br/>
+    <br/>
+
+	<h1 class="widget-title">Other tags</h1>
+
+    {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+        {{ if or (eq $name "devops") (eq $name "monitoring") (eq $name "golang") }}
+        {{else}}
+            <a href="{{$baseurl}}tags/{{ $name | urlize }}">{{ $name }}</a>
+            {{ $tax.tags.Count $name }}
+            <br/>
+        {{ end }}
+    {{ end }}
 </aside>

@@ -6,7 +6,7 @@
 		<div id="content" class="site-content" role="main">
 
 			<header class="archive-header">
-				<h1 class="archive-title">{{ .Title }} Archive</h1>
+				<h1 class="archive-title">Content tagged "{{ .Title }}"</h1>
 			</header>
 
 			{{ range where .Data.Pages "Section" "post" }}
