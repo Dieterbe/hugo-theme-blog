@@ -6,7 +6,9 @@
 		<div id="content" class="site-content" role="main">
 
 			<header class="archive-header">
-				<h1 class="archive-title">Content tagged "{{ .Title }}"</h1>
+				<h1 class="archive-title">Content tagged "{{ .Title }}"
+                <a href="{{ .RSSLink }}"><img class='feed' src="/files/rss.png" title="Rss 2.0" alt="Rss 2.0"/></a>
+                </h1>
 			</header>
 
 			{{ range where .Data.Pages "Section" "post" }}
