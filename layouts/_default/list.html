@@ -12,7 +12,7 @@
 			</header>
 
 			{{ range where .Data.Pages "Section" "post" }}
-				{{ partial "content.html" . }}
+				{{ partial "list-entry.html" . }}
 			{{ end }}
 		
 		</div><!-- #content -->
