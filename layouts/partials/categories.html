@@ -8,13 +8,13 @@
     <br/>
 	<h1 class="widget-title">Popular tags</h1>
 
-    <a href="{{$baseurl}}tags/monitoring">monitoring</a>
+    <a href="{{$baseurl}}/tags/monitoring">monitoring</a>
     {{ $tax.tags.Count "monitoring" }}
     <br/>
-    <a href="{{$baseurl}}tags/devops">devops</a>
+    <a href="{{$baseurl}}/tags/devops">devops</a>
     {{ $tax.tags.Count "devops" }}
     <br/>
-    <a href="{{$baseurl}}tags/golang">golang</a>
+    <a href="{{$baseurl}}/tags/golang">golang</a>
     {{ $tax.tags.Count "golang" }}
     <br/>
     <br/>
@@ -25,7 +25,7 @@
     {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
         {{ if or (eq $name "devops") (eq $name "monitoring") (eq $name "golang") }}
         {{else}}
-            <a href="{{$baseurl}}tags/{{ $name | urlize }}">{{ $name }}</a>
+            <a href="{{$baseurl}}/tags/{{ $name | urlize }}">{{ $name }}</a>
             {{ $tax.tags.Count $name }}
             <br/>
         {{ end }}
