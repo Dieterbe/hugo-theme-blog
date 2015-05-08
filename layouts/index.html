@@ -4,6 +4,7 @@
 
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
+            <a href="/post/index.xml" style="float:right; margin-right: 30px;">Subscribe <img src="/files/rss.png" alt="rss link"/></a>
 
 			{{ range first 1000 (where .Data.Pages "Section" "post") }}
 				{{ partial "summary.html" . }}
