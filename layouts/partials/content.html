@@ -37,5 +37,6 @@
                 <a href="{{ $baseurl}}/tags/{{ lower . | urlize }}/index.html" rel="tag">{{ . }}</a>
             {{ end }}
 		</span>
+		{{partial "comments.html" .}}
 	</footer>
 </article> <!-- #post-## -->

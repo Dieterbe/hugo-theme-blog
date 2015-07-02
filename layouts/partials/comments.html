@@ -50,7 +50,7 @@ var addComments = function(data) {
 
 var addError = function(jqXHR, status, err) {
 		e = "<div>Could not load comments: " + status + " " + err +"<br/>would you be so kind to let me know about this error?</div>";
-     $(template).insertBefore('.comments__new');
+     $(e).insertBefore('.comments__new');
 };
 
 $( document ).ready(function() {
