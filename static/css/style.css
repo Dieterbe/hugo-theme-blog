@@ -822,6 +822,8 @@ span + .edit-link:before,
 	background-color: #fff;
 	max-width: 1260px;
 	position: relative;
+    // center fix, see http://premium.wpmudev.org/blog/how-to-make-twenty-fourteen-or-any-other-wp-theme-super/ item 1
+    margin: 0 auto;
 }
 
 .main-content {
@@ -1060,7 +1062,7 @@ span + .edit-link:before,
 .site-content .entry-meta,
 .page-content {
 	margin: 0 auto;
-	max-width: 574px;
+	max-width: 474px;
 }
 
 .page-content {
@@ -3091,6 +3093,13 @@ a.post-thumbnail:hover {
 		z-index: 2;
 	}
 
+    .content-sidebar {
+        display:none;
+        }
+    #secondary {
+        display:none;
+        }
+
 	.list-view .site-content .post-thumbnail img {
 		float: left;
 		margin: 0 10px 3px 0;
@@ -3169,7 +3178,8 @@ a.post-thumbnail:hover {
 	.site-content span + .comments-link:before,
 	.site-content span + .edit-link:before,
 	.site-content span + .entry-date:before {
-		content: "";
+		//content: "";
+        size: 10px;
 	}
 
 	.attachment span.entry-date:before,
