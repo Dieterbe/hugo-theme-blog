@@ -4316,3 +4316,8 @@ a.post-thumbnail:hover {
 		line-height: 36px;
 	}
 }
+.comment { padding: 20px; border: 0px; font-size: 120%;}
+.commentAuthor { font-weight: bold; margin-bottom: 18px;}
+.commentAvatar { float: left; width: 100px; }
+.commentRight { margin-left: 110px; text-transform: none;}
+.commentMessage {margin-top: 18px;}
