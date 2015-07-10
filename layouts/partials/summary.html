@@ -26,9 +26,13 @@
 		</div><!-- .entry-meta -->
 
 	</header>
-	
+
 	<div class="entry-content">
+		{{ if .Params.summary }}
+		{{ .Params.summary | markdownify }}
+		{{ else }}
 		{{ .Summary }}
+		{{ end}}
         </br>
         </br>
         <a href="{{ .Permalink }}">Full article</a>
@@ -36,9 +40,9 @@
     <!-- .entry-content -->
 
 	<footer class="entry-meta">
-		<span class="tag-links">		
+		<span class="tag-links">
 			{{ range .Params.tags }}
-                <a href="{{ $baseurl}}/tags/{{ lower . | urlize }}/index.html" rel="tag">{{ . }}</a>
+                <a href="{{ $baseurl}}/tags/{{ lower . | urlize }}" rel="tag">{{ . }}</a>
             {{ end }}
 		</span>
 	</footer>

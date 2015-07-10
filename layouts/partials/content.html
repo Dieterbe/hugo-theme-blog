@@ -34,7 +34,7 @@
 	<footer class="entry-meta">
 		<span class="tag-links">
 			{{ range .Params.tags }}
-                <a href="{{ $baseurl}}/tags/{{ lower . | urlize }}/index.html" rel="tag">{{ . }}</a>
+                <a href="{{ $baseurl}}/tags/{{ lower . | urlize }}" rel="tag">{{ . }}</a>
             {{ end }}
 		</span>
 		{{ if not .Params.hidecomments }}

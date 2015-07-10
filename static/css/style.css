@@ -3128,7 +3128,7 @@ a.post-thumbnail:hover {
 	.list-view .site-content .type-post .entry-summary,
 	.list-view .site-content .type-page .entry-summary,
 	.list-view .site-content footer.entry-meta {
-		display: none;
+		display: block;
 	}
 
 	.list-view .site-content .entry-title {
