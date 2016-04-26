@@ -1245,10 +1245,10 @@ a.post-thumbnail:hover {
 .entry-content,
 .entry-summary,
 .page-content {
-	-webkit-hyphens: auto;
-	-moz-hyphens:    auto;
-	-ms-hyphens:     auto;
-	hyphens:         auto;
+	-webkit-hyphens: none;
+	-moz-hyphens:    none;
+	-ms-hyphens:     none;
+	hyphens:         none;
 	word-wrap: break-word;
 }
 
