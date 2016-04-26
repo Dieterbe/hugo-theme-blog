@@ -4331,3 +4331,11 @@ a.post-thumbnail:hover {
 .commentAvatar { float: left; width: 100px; }
 .commentRight { margin-left: 110px; text-transform: none;}
 .commentMessage {margin-top: 18px;}
+
+.intermezzo {
+	background-color:#e6f7ff;
+	color:#00344d;
+	padding:20px;
+	border-radius:8px;
+}
+
