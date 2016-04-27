@@ -18,7 +18,7 @@
 		<div class="entry-meta">
 			<span class="entry-date">
 				<a href="{{ .Permalink }}" rel="bookmark">
-					<time class="entry-date" datetime="{{ .Date }}">
+					<time class="entry-date" datetime="{{ .Date.Format "2006-01-02T15:04:05-07:00" }}">
 						{{ .Date.Format "January 2, 2006" }}
 					</time>
 				</a>

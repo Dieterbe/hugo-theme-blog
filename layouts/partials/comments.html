@@ -19,7 +19,7 @@ display: none;
 		<img class="commentAvatar" src="https://www.gravatar.com/avatar/@hash?d=mm&s=80">
 		<div class="commentRight">
 			<p class="commentAuthor"><a href="@url" class="commentAuthor">@name</a></p>
-			<time class="entry-date" datetime="{{ .Date }}">@date</time>
+			<time class="entry-date" datetime="{{ .Date.Format "2006-01-02T15:04:05-07:00" }}">@date</time>
 			<div class="commentMessage">@message</div>
 		</div>
 	</article>
